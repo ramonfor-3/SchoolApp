@@ -1,0 +1,16 @@
+<table class="table">
+    <thead class="col">
+        <tr>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Fecha de ingreso</th>
+        </tr>
+    </thead>
+    <tbody  *ngFor="let item of student">
+        <td>{{item.name}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.createdDate| date}}</td>
+    </tbody>
+</table>
